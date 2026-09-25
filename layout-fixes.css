@@ -1,0 +1,107 @@
+/* Targeted responsive repairs for the supplied portfolio. */
+.site-header {
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  min-height: 4.5rem;
+  padding: .8rem max(1.25rem, calc((100% - 1200px) / 2));
+}
+.site-header > * { min-width: 0; }
+.nav-links { flex-wrap: wrap; justify-content: flex-end; font-size: .875rem; }
+.nav-links a { min-height: 2.75rem; display: inline-flex; align-items: center; }
+
+/* Size the headline from its column, not from the monitor width. */
+.hero {
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, .8fr);
+  gap: clamp(2rem, 4vw, 4rem);
+  min-height: 0;
+  padding-block: clamp(3rem, 5vw, 5rem);
+  align-items: center;
+}
+.hero-copy {
+  container-type: inline-size;
+  min-width: 0;
+  align-self: center;
+  padding: 0;
+  transform: none;
+}
+.hero h1 {
+  max-width: 100%;
+  font-size: clamp(2.25rem, 5.5vw, 5rem);
+  font-size: clamp(2.25rem, 12cqi, 5rem);
+  line-height: 1.04;
+  overflow-wrap: anywhere;
+}
+.hero h1 span { text-shadow: 2px 2px 0 var(--ink); }
+.hero-index {
+  width: min(94%, 25rem);
+  min-width: 0;
+  place-self: center;
+  margin: 0;
+}
+.index-caption { flex-wrap: wrap; gap: .5rem; }
+
+/* Full-width color, bounded type, and complete phrases that can wrap. */
+.marquee-band {
+  width: 100%;
+  margin-inline: 0;
+  transform: none;
+  overflow: visible;
+}
+.marquee-band p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: .55rem clamp(.9rem, 2vw, 2rem);
+  width: min(1440px, calc(100% - 3rem));
+  margin-inline: auto;
+  padding: 1rem 0;
+  white-space: normal;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  line-height: 1.5;
+  letter-spacing: .08em;
+}
+.marquee-band .band-item { display: inline-flex; align-items: center; gap: .6em; max-width: 100%; }
+.marquee-band i { flex: none; margin: 0; font-size: .7em; }
+
+/* Center both the About panel and its portrait, with a deliberate small tilt. */
+.about-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  width: min(1180px, calc(100% - 5rem));
+  margin-inline: auto;
+  padding: clamp(2rem, 4vw, 4rem);
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+  transform: rotate(-1deg);
+  transform-origin: center;
+}
+.about-copy { min-width: 0; transform: none; }
+.about-copy h2 { font-size: clamp(2.5rem, 4.5vw, 4.5rem); line-height: 1.05; overflow-wrap: anywhere; }
+.reference-card {
+  width: min(100%, 32rem);
+  min-width: 0;
+  margin: 0 auto;
+  place-self: center;
+  transform: rotate(2deg);
+  transform-origin: center;
+}
+.reference-card figcaption { flex-wrap: wrap; gap: .5rem 1rem; line-height: 1.5; }
+.reference-card figcaption > span { min-width: 0; overflow-wrap: anywhere; }
+
+@media (max-width: 940px) {
+  .hero, .about-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero-copy { width: 100%; }
+  .hero-index { width: min(88%, 30rem); margin: 0 auto; }
+  .about-copy { max-width: 42rem; margin-inline: auto; }
+}
+@media (max-width: 680px) {
+  .site-header { padding: .8rem 1.25rem; gap: .5rem; }
+  .nav-links { justify-content: flex-start; gap: .2rem 1rem; overflow: visible; }
+  .hero { padding-block: 2.5rem 3rem; }
+  .hero h1 { font-size: clamp(1.85rem, 12cqi, 4.5rem); }
+  .hero-index { width: min(calc(100% - 2rem), 25rem); }
+  .marquee-band p { width: calc(100% - 2rem); font-size: .95rem; letter-spacing: .045em; }
+  .about-grid { width: calc(100% - 3rem); padding: 2rem 1.4rem; transform: rotate(-.6deg); }
+  .about-copy h2 { font-size: clamp(2rem, 8vw, 3.5rem); }
+  .reference-card { width: calc(100% - 1rem); transform: rotate(1.5deg); }
+}

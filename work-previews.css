@@ -1,0 +1,65 @@
+/* Keep each ORIGINAL fill tied to its named card, even if cards are reordered. */
+.work-card--video { --work-card-fill: var(--gradient-paper); }
+.work-card--sound { --work-card-fill: var(--gradient-warm); }
+.work-card--visual { --work-card-fill: var(--gradient-cool); }
+.work-card--code { --work-card-fill: var(--gradient-warm-reverse); }
+
+.work-card[data-work-preview] {
+  isolation: isolate;
+  background: var(--work-card-fill);
+}
+
+/* Only switch the base after at least one preview has loaded successfully. */
+.work-card[data-work-preview].has-work-previews {
+  background: var(--fur-base);
+}
+
+/* Layer order: neutral base < tiles < original color overlay < marks < text. */
+.work-card-preview {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+  user-select: none;
+}
+
+.work-card-tiles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--work-tile-columns, 1), minmax(0, 1fr));
+  grid-auto-rows: var(--work-tile-height, 135px);
+  gap: var(--work-tile-gap, 4px);
+  opacity: var(--work-image-opacity, 1);
+}
+
+.work-card-tiles > .work-card-tile {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  max-width: none;
+  object-fit: var(--work-image-fit, cover);
+  object-position: var(--work-image-position, 50% 50%);
+}
+
+.work-card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--work-card-fill);
+  opacity: var(--work-overlay-opacity, .82);
+}
+
+.work-card[data-work-preview]::before {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.work-card[data-work-preview] > :is(.card-number, h3, p, .text-links, .featured-project) {
+  position: relative;
+  z-index: 2;
+}

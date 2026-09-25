@@ -1,0 +1,39 @@
+/*
+ * Editable content hooks are named in index.html:
+ *   .editable-copy  + .copy-<section>-<field>
+ *   .editable-link  + .link-<location>-<destination>
+ *   .editable-image + .image-<location>-<subject>
+ * These hooks do not change the approved layout.
+ *
+ * Each badge has a permanent, unique class:
+ *   .commission-status--illustration
+ *   .commission-status--video
+ *   .commission-status--audio
+ *
+ * Edit commissions.categories in portfolio.config.js to change live states.
+ * Each badge's data-status in index.html remains the no-script fallback.
+ * CSS displays the label and color matching that badge's individual state.
+ */
+
+/* Closed is the default; retain its existing colors from styles.css. */
+.commission-status .commission-status-label--open {
+  display: none;
+}
+
+.commission-status[data-status="open"] .commission-status-label--closed {
+  display: none;
+}
+
+.commission-status[data-status="open"] .commission-status-label--open {
+  display: inline;
+}
+
+/* Both the background and dot are scoped to the individual open badge. */
+.status-row .commission-status[data-status="open"] {
+  background: var(--commission-open-fill, #ade6b9);
+  color: var(--ink);
+}
+
+.status-row .commission-status[data-status="open"] .commission-status-dot {
+  background: var(--commission-open-dot, #176537);
+}
