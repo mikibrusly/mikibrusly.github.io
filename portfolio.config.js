@@ -136,7 +136,7 @@ window.MIKI_PORTFOLIO = {
       "soundcloud": "https://soundcloud.com/miki-brusly/albums",
       "music-portfolio": "",
       "deviantart": "https://www.deviantart.com/mikiinmotion",
-      "codepen": "",
+      "codepen": "https://codepen.io/Sarah-Lion",
       "junk-drawer": "",
       "kofi": "https://ko-fi.com/mikiinmotion",
       "commission-details": ""
