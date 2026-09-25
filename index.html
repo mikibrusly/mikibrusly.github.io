@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Miki placeholder-copy portfolio.">
+    <title>Miki — Lorem Ipsum</title>
+    <link rel="preload" href="assets/fonts/anton-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout-fixes.css">
+    <link rel="stylesheet" href="editable-content.css">
+    <link rel="stylesheet" href="work-previews.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="poster-design.css">
+    <script src="portfolio.config.js" defer></script>
+    <script src="portfolio.js" defer></script>
+    <script src="work-previews.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link editable-link link-skip" href="#home">Skip to content</a>
+    <main class="site-canvas">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="wordmark editable-link link-brand-header" href="#home" aria-label="Miki, home">
+          <span class="wordmark-dot" aria-hidden="true"></span>MIKI</a>
+        <nav class="nav-links" aria-label="Site sections">
+          <a href="#work" class="editable-link link-nav-work">Work</a>
+          <a href="#about" class="editable-link link-nav-about">About</a>
+          <a href="#commissions" class="editable-link link-nav-commissions">Commissions</a>
+          <a href="#links" class="editable-link link-nav-links">Links</a>
+        </nav>
+      </header>
+      <section class="hero section-shell" id="home" tabindex="-1">
+        <div class="hero-copy">
+          <p class="eyebrow editable-copy copy-hero-eyebrow">Lorem ipsum / dolor / sit amet</p>
+          <h1 class="editable-copy copy-hero-title">Picture<br>Sound<br>
+            <span>&amp; Motion</span>
+          </h1>
+          <p class="lede editable-copy copy-hero-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+          <div class="button-row">
+            <a class="button button-primary editable-link link-hero-work" href="#work">Browse the work <span aria-hidden="true">↓</span>
+            </a>
+            <a class="button button-secondary editable-link link-hero-about" href="#about">More about me</a>
+          </div>
+        </div>
+        <aside class="hero-index" aria-label="Creative areas">
+          <div class="index-field" aria-hidden="true">
+            <span class="blue-plane"></span>
+            <img fetchpriority="high" class="hero-character editable-image image-hero-character" src="assets/miki-hero-poster.webp" width="1122" height="1402" decoding="async" alt="">
+            <strong class="editable-copy copy-hero-monogram">M</strong>
+            <span class="poster-stamp editable-copy copy-hero-stamp">MIKI / NO. 01</span>
+          </div>
+          <div class="index-caption">
+            <span class="editable-copy copy-hero-caption-primary">Lorem ipsum dolor</span>
+            <span class="editable-copy copy-hero-caption-secondary">Sit amet adipiscing</span>
+          </div>
+          <ol>
+            <li class="editable-copy copy-hero-category-video">
+              <span>01</span> Video</li>
+            <li class="editable-copy copy-hero-category-sound">
+              <span>02</span> Sound</li>
+            <li class="editable-copy copy-hero-category-visual">
+              <span>03</span> Art</li>
+            <li class="editable-copy copy-hero-category-code">
+              <span>04</span> Web oddities</li>
+          </ol>
+        </aside>
+      </section>
+      <section class="marquee-band" aria-label="Site summary">
+        <p>
+          <span class="band-item">
+            <i aria-hidden="true">◆</i>
+            <span class="editable-copy copy-banner-video">LOREM IPSUM</span>
+          </span>
+          <span class="band-item">
+            <i aria-hidden="true">◆</i>
+            <span class="editable-copy copy-banner-sound">DOLOR</span>
+          </span>
+          <span class="band-item">
+            <i aria-hidden="true">◆</i>
+            <span class="editable-copy copy-banner-visual">SIT AMET</span>
+          </span>
+          <span class="band-item">
+            <i aria-hidden="true">◆</i>
+            <span class="editable-copy copy-banner-code">CONSECTETUR ADIPISCING</span>
+          </span>
+        </p>
+      </section>
+      <section class="section-shell section-block" id="work">
+        <header class="section-heading">
+          <div>
+            <p class="eyebrow editable-copy copy-work-eyebrow">Lorem ipsum dolor</p>
+            <h2 class="editable-copy copy-work-title">Lorem, ipsum dolor.</h2>
+          </div>
+          <p class="editable-copy copy-work-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </header>
+        <div class="work-grid">
+          <article class="work-card work-card--video" data-work-preview="video">
+            <span class="card-number">01</span>
+            <h3 class="editable-copy copy-work-video-title">Lorem ipsum</h3>
+            <p class="editable-copy copy-work-video-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.</p>
+            <section class="featured-project featured-project--video" aria-labelledby="project-title-video" hidden>
+              <p class="project-eyebrow">Featured project</p>
+              <h4 class="project-title" id="project-title-video"></h4>
+              <dl class="project-details">
+                <div class="project-role-row"><dt class="project-role-label">My role</dt><dd class="project-role"></dd></div>
+                <div class="project-result-row"><dt class="project-result-label">Result</dt><dd class="project-result"></dd></div>
+              </dl>
+              <a class="project-link" hidden><span class="project-link-label">View project</span><span aria-hidden="true">↗</span></a>
+            </section>
+            <div class="text-links">
+              <a href="#links-needed" class="editable-link link-work-video">Selected video work <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+          <article class="work-card work-card--sound" data-work-preview="sound">
+            <span class="card-number">02</span>
+            <h3 class="editable-copy copy-work-sound-title">Dolor</h3>
+            <p class="editable-copy copy-work-sound-description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <section class="featured-project featured-project--sound" aria-labelledby="project-title-sound" hidden>
+              <p class="project-eyebrow">Featured project</p>
+              <h4 class="project-title" id="project-title-sound"></h4>
+              <dl class="project-details">
+                <div class="project-role-row"><dt class="project-role-label">My role</dt><dd class="project-role"></dd></div>
+                <div class="project-result-row"><dt class="project-result-label">Result</dt><dd class="project-result"></dd></div>
+              </dl>
+              <a class="project-link" hidden><span class="project-link-label">View project</span><span aria-hidden="true">↗</span></a>
+            </section>
+            <div class="text-links">
+              <a href="#links-needed" class="editable-link link-work-soundcloud">SoundCloud <span aria-hidden="true">↗</span>
+              </a>
+              <a href="#links-needed" class="editable-link link-work-music-portfolio">Music portfolio <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+          <article class="work-card work-card--visual" data-work-preview="visual">
+            <span class="card-number">03</span>
+            <h3 class="editable-copy copy-work-visual-title">Sit amet</h3>
+            <p class="editable-copy copy-work-visual-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <section class="featured-project featured-project--visual" aria-labelledby="project-title-visual" hidden>
+              <p class="project-eyebrow">Featured project</p>
+              <h4 class="project-title" id="project-title-visual"></h4>
+              <dl class="project-details">
+                <div class="project-role-row"><dt class="project-role-label">My role</dt><dd class="project-role"></dd></div>
+                <div class="project-result-row"><dt class="project-result-label">Result</dt><dd class="project-result"></dd></div>
+              </dl>
+              <a class="project-link" hidden><span class="project-link-label">View project</span><span aria-hidden="true">↗</span></a>
+            </section>
+            <div class="text-links">
+              <a href="#links-needed" class="editable-link link-work-deviantart">DeviantArt <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+          <article class="work-card work-card--code" data-work-preview="code">
+            <span class="card-number">04</span>
+            <h3 class="editable-copy copy-work-code-title">Elit + tempor</h3>
+            <p class="editable-copy copy-work-code-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            <section class="featured-project featured-project--code" aria-labelledby="project-title-code" hidden>
+              <p class="project-eyebrow">Featured project</p>
+              <h4 class="project-title" id="project-title-code"></h4>
+              <dl class="project-details">
+                <div class="project-role-row"><dt class="project-role-label">My role</dt><dd class="project-role"></dd></div>
+                <div class="project-result-row"><dt class="project-result-label">Result</dt><dd class="project-result"></dd></div>
+              </dl>
+              <a class="project-link" hidden><span class="project-link-label">View project</span><span aria-hidden="true">↗</span></a>
+            </section>
+            <div class="text-links">
+              <a href="#links-needed" class="editable-link link-work-codepen">CodePen <span aria-hidden="true">↗</span>
+              </a>
+              <a href="#links-needed" class="editable-link link-work-junk-drawer">The junk drawer <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section-shell section-block about-grid" id="about">
+        <div class="about-copy">
+          <p class="eyebrow editable-copy copy-about-eyebrow">About</p>
+          <h2 class="editable-copy copy-about-title">Lorem ipsum. Dolor sit amet consectetur.</h2>
+          <p class="about-lede editable-copy copy-about-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+          <p class="editable-copy copy-about-body">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          <div class="tag-list" aria-label="Areas of practice">
+            <span class="editable-copy copy-practice-editing">lorem ipsum</span>
+            <span class="editable-copy copy-practice-motion">dolor</span>
+            <span class="editable-copy copy-practice-music">consectetur elit</span>
+            <span class="editable-copy copy-practice-bass">amet</span>
+            <span class="editable-copy copy-practice-research">tempor incididunt</span>
+          </div>
+        </div>
+        <figure class="reference-card">
+          <div class="image-frame">
+            <img src="assets/miki-portrait.webp" width="1024" height="1024" decoding="async" alt="Miki, a pale-furred anthro cheetah with dark spots and turquoise hair, waving against a soft pink background" loading="lazy" class="editable-image image-about-character">
+          </div>
+          <figcaption>
+            <span class="editable-copy copy-portrait-caption">Character portrait / Miki</span>
+            <span class="editable-copy copy-portrait-details">fur · spots · turquoise · coral · amber</span>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="commission-wrap" id="commissions">
+        <div class="section-shell commission-grid">
+          <div class="commission-intro">
+            <p class="eyebrow eyebrow-light editable-copy copy-commissions-eyebrow">Commissions</p>
+            <h2 class="editable-copy copy-commissions-title">Lorem ipsum dolor sit amet consectetur.</h2>
+            <p class="editable-copy copy-commissions-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <a class="button button-light editable-link link-commission-details" href="#links-needed">Commission details <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="status-board" aria-label="Commission availability">
+            <div class="status-header">
+              <span class="editable-copy copy-commission-type-heading">Type</span>
+              <span class="editable-copy copy-commission-status-heading">Status</span>
+            </div>
+            <!-- Configure states in portfolio.config.js; these values are the static fallback. -->
+            <div class="status-row commission-row commission-row--illustration">
+              <span class="editable-copy copy-commission-illustration-category">Character / illustration</span>
+              <strong class="commission-status commission-status--illustration" data-status="closed">
+                <i aria-hidden="true" class="commission-status-dot"></i>
+                <span class="commission-status-label commission-status-label--closed">Closed</span>
+                <span class="commission-status-label commission-status-label--open">Open</span>
+              </strong>
+            </div>
+            <div class="status-row commission-row commission-row--video">
+              <span class="editable-copy copy-commission-video-category">Video editing</span>
+              <strong class="commission-status commission-status--video" data-status="closed">
+                <i aria-hidden="true" class="commission-status-dot"></i>
+                <span class="commission-status-label commission-status-label--closed">Closed</span>
+                <span class="commission-status-label commission-status-label--open">Open</span>
+              </strong>
+            </div>
+            <div class="status-row commission-row commission-row--audio">
+              <span class="editable-copy copy-commission-audio-category">Music / audio</span>
+              <strong class="commission-status commission-status--audio" data-status="closed">
+                <i aria-hidden="true" class="commission-status-dot"></i>
+                <span class="commission-status-label commission-status-label--closed">Closed</span>
+                <span class="commission-status-label commission-status-label--open">Open</span>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-shell section-block" id="links">
+        <header class="section-heading links-heading">
+          <div>
+            <p class="eyebrow editable-copy copy-links-eyebrow">Elsewhere</p>
+            <h2 class="editable-copy copy-links-title">Lorem ipsum dolor.</h2>
+          </div>
+          <a class="kofi-mark editable-link link-kofi" href="#links-needed">
+            <span class="editable-copy copy-kofi-title">Ko-fi</span>
+            <strong class="editable-copy copy-kofi-description">Tip jar / support ↗</strong>
+          </a>
+        </header>
+        <div class="destination-list">
+          <a href="#links-needed" class="destination editable-link link-destination-deviantart">
+            <span class="destination-number">01</span>
+            <strong class="editable-copy copy-destination-deviantart-title">DeviantArt</strong>
+            <em class="editable-copy copy-destination-deviantart-description">lorem ipsum</em>
+            <span class="destination-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="#links-needed" class="destination editable-link link-destination-soundcloud">
+            <span class="destination-number">02</span>
+            <strong class="editable-copy copy-destination-soundcloud-title">SoundCloud</strong>
+            <em class="editable-copy copy-destination-soundcloud-description">dolor + sit amet</em>
+            <span class="destination-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="#links-needed" class="destination editable-link link-destination-codepen">
+            <span class="destination-number">03</span>
+            <strong class="editable-copy copy-destination-codepen-title">CodePen</strong>
+            <em class="editable-copy copy-destination-codepen-description">consectetur elit</em>
+            <span class="destination-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="#links-needed" class="destination editable-link link-destination-music-portfolio">
+            <span class="destination-number">04</span>
+            <strong class="editable-copy copy-destination-music-portfolio-title">Music portfolio</strong>
+            <em class="editable-copy copy-destination-music-portfolio-description">tempor incididunt</em>
+            <span class="destination-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="links-needed" id="links-needed" role="note">
+          <span class="editable-copy copy-draft-title">Draft note</span>
+          <p class="editable-copy copy-draft-description">The structure is live; the personal URLs are deliberately not guessed. Add the DeviantArt, SoundCloud, CodePen, music portfolio, Ko-fi and commission-details links before public launch.</p>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="section-shell footer-inner">
+          <a class="wordmark wordmark-footer editable-link link-brand-footer" href="#home">
+            <span class="wordmark-dot" aria-hidden="true"></span>MIKI</a>
+          <p class="editable-copy copy-footer-description">Lorem ipsum, dolor &amp; consectetur elit.</p>
+          <a href="#home" class="editable-link link-back-to-top">Back to top ↑</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
