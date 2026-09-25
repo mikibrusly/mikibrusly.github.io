@@ -160,10 +160,10 @@ window.MIKI_PORTFOLIO = {
       "blendMode": null
     },
     "about-character": {
-      "src": "assets/miki-portrait.webp",
+      "src": "assets/miki-portrait-20260925.webp",
       "width": 1024,
       "height": 1024,
-      "alt": "Miki, a pale-furred anthro cheetah with dark spots and turquoise hair, waving against a soft pink background",
+      "alt": "Miki, a pale-furred spotted cheetah in a black hoodie, seated with a bass guitar in a dark blue studio",
       "fit": null,
       "position": null,
       "blendMode": null
